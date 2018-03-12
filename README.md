@@ -37,4 +37,7 @@ contract SimpleStorage{
 
 ## （二）在线IDE  
 [Remix](http://remix.ethereum.org)  
-![Image text](https://github.com/NOVA-QY/SmartContract/blob/master/img-folder/1.png)
+![Image text](https://github.com/NOVA-QY/SmartContract/blob/master/img-folder/1.png)  
+>* **1.点击‘create’部署合约**  
+>* **2.测试set/get方法**  
+![image text](https://github.com/NOVA-QY/SmartContract/blob/master/img-folder/2.png)
