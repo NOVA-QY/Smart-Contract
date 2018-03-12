@@ -58,9 +58,19 @@ Execution cost包括存储全局变量以及方法调用相关的运行环境的
 >* address.send(value) 只能返回 调用成功或失败的布尔类型 
 >* address.call,address.callcode and address.delegatecall  
 
-## （四）ETHER单位  
->* wei  
+## （四）单位系统  
+**ETHER单位**
+>* wei(相当于1)  
 >* szabo  = 10^12 wei  
 >* finney = 10^15 wei  
 >* ether  = 10^18 wei  
+
+**时间单位**
+>* seconds  
+>* minutes  
+>* hours  
+>* days  
+>* weeks  
+>* years  
+
 
