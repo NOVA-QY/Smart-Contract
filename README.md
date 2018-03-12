@@ -11,3 +11,25 @@ pragma solidity ^0.4.0
 contract SimpleStorage{
 }
 ```
+
+**状态变量**
+```solidity
+contract SimpleStorage{
+    uint storedData;
+}
+```
+
+**合约方法**
+```solidity
+contract SimpleStorage{
+    uint storedData;
+    
+    function set(uint x){
+        storedData=x;
+    }
+    
+    function get() constant returns (uint){
+        return stroedData;
+    }
+}
+```
