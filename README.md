@@ -40,4 +40,6 @@ contract SimpleStorage{
 ![Image text](https://github.com/NOVA-QY/SmartContract/blob/master/img-folder/1.png)  
 >* **1.点击‘create’部署合约**  
 >* **2.测试set/get方法**  
-![image text](https://github.com/NOVA-QY/SmartContract/blob/master/img-folder/2.png)
+![image text](https://github.com/NOVA-QY/SmartContract/blob/master/img-folder/2.png)  
+>* **3.合约生效**  
+![image text](https://github.com/NOVA-QY/SmartContract/blob/master/img-folder/3.png)
