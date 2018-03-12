@@ -36,4 +36,4 @@ contract SimpleStorage{
 注：constant在此无效
 
 ## （二）在线IDE  
-[在线IDE](http://remix.ethereum.org)
+[Remix](http://remix.ethereum.org)
