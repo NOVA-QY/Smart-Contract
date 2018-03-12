@@ -85,6 +85,6 @@ Execution cost包括存储全局变量以及方法调用相关的运行环境的
 ## （六）消息  
 >* msg.data  
 >* msg.gas(uint)  
->* msg.render(address)  
+>* msg.sender(address)  
 >* msg.sig  
 >* msg.value(uint)  
