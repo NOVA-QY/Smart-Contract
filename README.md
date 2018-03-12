@@ -51,6 +51,9 @@ contract SimpleStorage{
 > 
 > **关于transaction cost和execution cost的区别是什么？**  
 Execution cost包括存储全局变量以及方法调用相关的运行环境的开销。同一个函数，每次调用时的execution cost有可能是不同的。（比如全局变量发生了变化导致）  
-而transaction cost和编译后的合约代码长度相关，也和execution cost相关。同一个合约，每次执行时transaction cost - execution cost的值应该是不变的。  
-
-
+而transaction cost和编译后的合约代码长度相关，也和execution cost相关。同一个合约，每次执行时transaction cost - execution cost的值应该是不变的。  
+## （三）Solidity中的地址Address(钱包account可以是地址、智能合约contract也可以是地址)  
+>* address.balance 地址里存放的钱数  
+>* address.transfer(value) 可以将调用后的异常返回到调用者手中  
+>* address.send(value) 只能返回 调用成功或失败的布尔类型 
+>* address.call,address.callcode and address.delegatecall  
