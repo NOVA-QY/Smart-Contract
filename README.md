@@ -33,3 +33,7 @@ contract SimpleStorage{
     }
 }
 ```
+注：constant在此无效
+
+## 在线IDE  
+remix.ethereum.org
