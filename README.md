@@ -73,4 +73,18 @@ Execution cost包括存储全局变量以及方法调用相关的运行环境的
 >* weeks  
 >* years  
 
+## （五）块  
+>* block.blockhash(uint blockNumber) returns (bytes32)  返回块的哈希值  
+>* block.coinbase(address)  谁挖到了矿  
+>* block.difficulty(uint)   
+>* block.gaslimit(uint)     gas上限  
+>* block.number(uint)       块的序号  
+>* block.timestamp(uint)    块的创建时间  
+>* now                      
 
+## （六）消息  
+>* msg.data  
+>* msg.gas(uint)  
+>* msg.render(address)  
+>* msg.sig  
+>* msg.value(uint)  
