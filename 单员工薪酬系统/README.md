@@ -1,5 +1,5 @@
 # 智能合约设计  
 
 ## （一）错误检测  
->* assert(bool)
->* require(bool)
+>* assert(bool):在程序运行时使用（**确认**）
+>* require(bool):检测在程序输入时，输入值是否满足要求（**要求**）
