@@ -20,7 +20,7 @@ struct Employee{
 
 ## （三）设计  
 >* 通过数组来存储多个员工的信息  
->   * Employee[] examplees  
+>   * Employee[] employees  
 >   * function addEmployee  
 >   * function removeEmployee  
 
