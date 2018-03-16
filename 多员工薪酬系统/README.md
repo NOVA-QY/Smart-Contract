@@ -10,7 +10,7 @@
 **注：动态数组在创建时，里面没有元素，默认长度为0**  
 
 ## （二）结构体  
-```
+```solidity
 struct Employee{
     address id;
     uint salary;
