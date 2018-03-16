@@ -29,16 +29,16 @@ struct Employee{
 >* memory       只是EVM中临时空间，function运行完毕就会被释放掉  
 >* calldata     类似memory，function运行完就被抹去  
 >* 强制  
->   * 状态变量存储：storage
->   * function输入参数:calldata  
+>	* 状态变量存储：storage
+>	* function输入参数:calldata  
 >* 默认  
->   * function返回参数:memory  
->   * 本地变量:storage  
+>	* function返回参数:memory  
+>	* 本地变量:storage  
 
 **规则:**  
 >* 相同存储空间变量赋值
->   * 传递reference(EVM上的内存地址)  
+>	* 传递reference(EVM上的内存地址)  
 >* 不同存储空间变量赋值  
->   * 拷贝
+>	* 拷贝
 
 
