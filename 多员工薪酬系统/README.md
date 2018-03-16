@@ -7,4 +7,14 @@
 >	* length  
 >	* push　　　　只有动态数组有  
 
-**注：动态数组在创建时，里面没有元素，默认长度为0**
+**注：动态数组在创建时，里面没有元素，默认长度为0**  
+
+## （二）结构体  
+```
+struct Employee{
+    address id;
+    uint salary;
+    uint lastPayDay;
+}
+```
+
