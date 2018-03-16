@@ -27,8 +27,8 @@ contract Payroll {
         require(msg.sender == owner);
         
         //清算上一个员工的工资，并发工资
-        if (employee != 0x0) {
-            uint payment = salary * (now - lastPayday) / payDuration;
+        if (employee != 0x0) {		//如果没有员工信息，默认是0x0
+            uint payment = salary * (now - lastPayday) / payDuration;		//solidity中只有整除，运算优先级在此处不可更改
             employee.transfer(payment);
         }
 
