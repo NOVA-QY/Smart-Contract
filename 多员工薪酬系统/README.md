@@ -41,4 +41,11 @@ struct Employee{
 >* 不同存储空间变量赋值  
 >	* 拷贝
 
+## （五）可视度  
+>* public  
+>* external  
+>* private  
+>* internal  
+**注:** 参数类型或返回参数类型为struct不能作为public可视度存在，solidity中默认function的可视度是public
+
 
