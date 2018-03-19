@@ -31,7 +31,7 @@
 >	* 默认public  
 
 ## （四）继承的基本语法
-```
+```solidity
 pragma solidity ^0.4.0;
 
 contract owned{
@@ -61,8 +61,8 @@ contract Parent is owned{
 
 contract Child is Parent{
     uint y;
-    //
-    function Child(uint _y) Parent(_y*_y){
+    //父类的构造参数可以是子类参数的任意运算
+    function Child(uint _y) Parent(_y*_y){
         y = _y;
     }
     
@@ -70,11 +70,11 @@ contract Child is Parent{
         parentFunc2();
         this.parentFunc3();
         parentFunc1();
-        //
-    }
+        //错误:private对继承类不可见:ParentFunc4();
+    }
 }
 
-//
+//不同的父类构造方法
 contract Child2 is Parent(666){
     uint y;
     function Child(uint _y){
@@ -85,7 +85,7 @@ contract Child2 is Parent(666){
         parentFunc1();
         parentFunc2();
         this.parentFunc3();
-        //
+        //错误:private对继承类不可见:ParentFunc4();
     }
 }
 ```
