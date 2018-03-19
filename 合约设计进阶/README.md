@@ -15,3 +15,5 @@
 >* 赋值:employees[key]=value  
 >* 取值:value=employees[key]  
 >* value是引用，在storage上存储，可以直接修改  
+>* 当key不存在，value=type's default  
+
