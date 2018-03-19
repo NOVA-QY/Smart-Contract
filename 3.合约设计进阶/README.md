@@ -88,7 +88,7 @@ contract Child2 is Parent(666){
         //错误:private对继承类不可见:ParentFunc4();
     }
 }
-```
+```  
 **继承：抽象合约**  
 ```solidity
 pragma solidity ^0.4.0;
