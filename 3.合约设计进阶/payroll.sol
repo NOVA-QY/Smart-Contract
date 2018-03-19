@@ -67,9 +67,13 @@ contract Payroll{
         return this.balance/totalSalary;
     }
     
+    //命名函数返回参数
     function checkEmployee(address employeeId) returns (uint salary,uint lastPayDay){
         var employee = employees[employeeId];
         return (employee.salary,employee.lastPayDay);
+        //也可改为:
+        //salary=employee.salary;
+        //lastPayDay=employee.lastPayDay;
     }
     
     function hasEnoughFund() returns (bool){
