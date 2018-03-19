@@ -48,4 +48,7 @@ struct Employee{
 >* internal  
 **注:** 参数类型或返回参数类型为struct不能作为public可视度存在，solidity中默认function的可视度是public
 
+## （六）合约的优化  
+可将totalSalary设置为**全局变量**，避免每次循环多进行一次计算
+
 
