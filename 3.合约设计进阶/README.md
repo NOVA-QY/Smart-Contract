@@ -89,5 +89,18 @@ contract Child2 is Parent(666){
     }
 }
 ```
+**继承：抽象合约**  
+```solidity
+pragma solidity ^0.4.0;
+contract Parent{
+    function someFunc() returns (uint);
+}
+
+contract Child is Parent{
+    function someFunc() returns (uint){}
+        return 1;
+}
+```
+
 
 
