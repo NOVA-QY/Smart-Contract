@@ -25,7 +25,69 @@
 >* 状态变量:public,internal,private  
 >	* 默认internal  
 >	* public:自动定义取值函数
->	* private:不代表别的肉眼无法看到，只代表别的区块链智能合约无法看到
-**合约的所有成员变量都是肉眼可见的**
+>	* private:不代表别的肉眼无法看到，只代表别的区块链智能合约无法看到  
+**合约的所有成员变量都是肉眼可见的**  
+>* 函数public，external，internal，private  
+>	* 默认public  
+
+## （四）继承的基本语法
+```
+pragma solidity ^0.4.0;
+
+contract owned{
+    address owner;
+    function owned(){
+        owner = msg.sender;
+    }
+}
+
+contract Parent is owned{
+    uint x;
+    
+    function Parent(uint _x){
+        x = _x;
+    }
+    
+    function parentFunc1() internal{
+        if(msg.sender == owner) selfdestruct(owner);
+    }
+    
+    function parentFunc2() public {}
+    
+    function parentFunc3() external {}
+    
+    function parentFunc4() private {}
+}
+
+contract Child is Parent{
+    uint y;
+    //
+    function Child(uint _y) Parent(_y*_y){
+        y = _y;
+    }
+    
+    function child(){
+        parentFunc2();
+        this.parentFunc3();
+        parentFunc1();
+        //
+    }
+}
+
+//
+contract Child2 is Parent(666){
+    uint y;
+    function Child(uint _y){
+        y = _y;
+    }
+    
+    function child(){
+        parentFunc1();
+        parentFunc2();
+        this.parentFunc3();
+        //
+    }
+}
+```
 
 
