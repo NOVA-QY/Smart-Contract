@@ -23,7 +23,7 @@
 >* internal:外部调用不可见，内部和子类可见  
 >* private:只有当前合约可见  
 >* 状态变量:public,internal,private  
->    * 默认internal  
->    * public:自动定义取值函数
+>	* 默认internal  
+>	* public:自动定义取值函数
 
 
