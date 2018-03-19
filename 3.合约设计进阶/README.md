@@ -17,3 +17,13 @@
 >* value是引用，在storage上存储，可以直接修改  
 >* 当key不存在，value=type's default  
 
+## （三）可视度  
+>* public:谁都可见  
+>* external:只有“外部调用”可见 **(特殊)**
+>* internal:外部调用不可见，内部和子类可见  
+>* private:只有当前合约可见  
+>* 状态变量:public,internal,private  
+>    * 默认internal  
+>    * public:自动定义取值函数
+
+
