@@ -25,5 +25,7 @@
 >* 状态变量:public,internal,private  
 >	* 默认internal  
 >	* public:自动定义取值函数
+>	* private:不代表别的肉眼无法看到，只代表别的区块链智能合约无法看到
+**合约的所有成员变量都是肉眼可见的**
 
 
