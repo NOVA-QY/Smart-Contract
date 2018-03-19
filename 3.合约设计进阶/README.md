@@ -97,10 +97,12 @@ contract Parent{
 }
 
 contract Child is Parent{
-    function someFunc() returns (uint){}
-        return 1;
+    function someFunc() returns (uint){
+        return 1;    
+    }
 }
-```
+```  
+
 
 
 
