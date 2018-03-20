@@ -99,9 +99,12 @@ contract Parent{
 contract Child is Parent{
     function someFunc() returns (uint){
         return 1;    
-    }
+    
 }
-```  
+```  
+**继承--INTERFACE**  
+
+
 
 
 
