@@ -151,6 +151,7 @@ contract Final is Base1,Base2{
     
 }
 
+//与contract同名的function可以类比为java中的main方法
 //可以将contract类比为class，只能声明成员变量和方法，不可以放可执行的代码
 contract test{
     function test(){//代码一定要放在function内，不能放在contract内function外
@@ -197,9 +198,31 @@ modifier onlyOwner{
 function addEmployee(address employeeId,uint salary) onlyOwner{
 }  
 ```
-**（2）说明**  
+**（2）说明**  
+```solidity
+pragma solidity ^0.4.0;
 
+contract Parent{
+    uint public a=2;
+    modifier someModifier(){
+        _;
+        a=1;    //语句有效，相当于加到了return前一行
+    }
+    
+    function parentFunc2(uint value) someModifier public returns (uint){
+        a=value;
+        return a;
+    }
+    
+    function parentFunc3(uint value) public returns (uint){
+        a=value;
+        return a;
+        a=1;        //return后的语句无效
+    }
+}
+```
 ## （六）SAFE MATH和LIBRARY  
+
 
 
 
