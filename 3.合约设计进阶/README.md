@@ -120,7 +120,70 @@ contract Child is Parent{
         return 1;
     }
 }
-```
+```  
+**继承--多继承**
+* 最平凡的多继承
+```solidity
+contract Base1{
+    function func1(){}
+}
+
+contract Base2{
+    function func2(){}
+}
+
+contract Final is Base1,Base2{
+    
+}
+```  
+* 重名函数的override次序  
+```solidity
+pragma solidity ^0.4.0;
+contract Base1{
+    function func1(){}
+}
+
+contract Base2{
+    function func1(){}
+}
+
+contract Final is Base1,Base2{
+    
+}
+
+contract test{
+    Final f = new Final();
+    f.func1();   
+}
+
+```  
+**继承--多继承**  
+* super:动态绑定上级函数  
+```solidity
+contract foundation{
+    function func1(){
+        //do stuff
+    }
+}
+
+contract Base1 is foundation{
+    function func1(){super.func1();}
+}
+
+contract Base2 is foundation{
+    function func1(){super.func1();}
+}
+
+contract Final is Base1,Base2{
+    
+}
+
+contract test{
+    Final f = new Final();
+    f.func1();
+}
+//
+```  
 
 
 
