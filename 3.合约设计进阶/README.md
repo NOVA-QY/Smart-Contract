@@ -101,8 +101,26 @@ contract Child is Parent{
         return 1;    
     
 }
-```  
-**继承--INTERFACE**  
+```
+**继承--INTERFACE**  
+```solidity
+pragma solidity ^0.4.0;
+interface Parent{
+    //不可继承其他合约或interface  
+    //没有构造函数
+    //没有状态变量
+    //没有struct
+    //没有enum
+    //简单来说，只有function定义，啥也没有！
+    function someFunc() returns (uint);
+}
+
+contract Child is Parent{
+    function someFunc() returns (uint){
+        return 1;
+    }
+}
+```
 
 
 
