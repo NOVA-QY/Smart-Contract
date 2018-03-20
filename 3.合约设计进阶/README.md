@@ -151,11 +151,13 @@ contract Final is Base1,Base2{
     
 }
 
+//可以将contract类比为class，只能声明成员变量和方法，不可以放可执行的代码
 contract test{
-    Final f = new Final();
-    f.func1();   
-}
-
+    function test(){//代码一定要放在function内，不能放在contract内function外
+        Final f = new Final();
+        f.func1(); 
+    }
+}  
 ```  
 **继承--多继承**  
 * super:动态绑定上级函数  
@@ -185,6 +187,19 @@ contract test{
 //
 ```  
 ## （五）MODIFIER  
+### 作用:避免总是重复出现一些语句  
+**（1）调用示例**
+```solidity
+modifier onlyOwner{
+    require(msg.sender==owner);
+    _;  //标明下划线之前的代码总是在函数的最开头执行
+}
+function addEmployee(address employeeId,uint salary) onlyOwner{
+}  
+```
+**（2）说明**  
+
+## （六）SAFE MATH和LIBRARY  
 
 
 
