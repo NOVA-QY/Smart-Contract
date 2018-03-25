@@ -66,6 +66,7 @@ truffle(development)>  metacoin  //通过实例与合约交互
 ```
 查看账户余额
 truffle(development)>  metacoin.getBalance.call('0x418729f901149a6af3c6248e463b8632c1d29ebc').then((result) => {console.log(result)})  
+```
 返回结果:`{ [String: '10000'] s: 1, e: 4, c: [ 10000 ] }`
 
-```
+
