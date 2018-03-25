@@ -35,7 +35,19 @@ truffle unbox metacoin  //产生实例
 
 ## （五）部署  
 >* 客户端  
->* TestRPC  
+>* TestRPC(现用ganache-cli)  
 >	* 基于javascript的区块链“模拟器”  
 >	* 不需要等待“挖矿”，所有区块链操作瞬间完成  
 >	* 主要用于部署前测试
+
+*  Web3j:区块链和javascript交互的桥梁
+
+```
+新建一个terminal
+>>>  ganache-cli
+切换回之前窗口
+>>>  truffle migration  
+部署成功
+>>>  trufflre console     //利用控制台交互
+
+```
