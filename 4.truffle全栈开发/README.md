@@ -72,5 +72,7 @@ truffle(development)>  metacoin.getBalance.call('0x418729f901149a6af3c6248e463b8
 给第二个账户打钱
 truffle(development)>  metacoin.sendCoin('0xf0f9a288074e24c6081a9a7fa1c49b8d18e45567',2).then((result) => {console.log(result)})
 ```
-返回`true`说明转账成功
-**注:调用的函数不可有call，否则会导致操作只会在本地的node上执行，不会同步到etherium网络**
+返回`true`说明转账成功  
+**注**:调用的函数不可有call，否则会导致操作只会在本地的node上执行，不会同步到etherium网络  
+
+
