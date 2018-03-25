@@ -12,7 +12,13 @@
 >* NVM node  
 >* 安装truffle  
 
-## （三）环境搭建  
+## （三）环境搭建  
+```
+npm -g install truffle  //下载框架
+mkdir payroll           //创建目录
+cd payroll              
+truffle unbox metacoin  //产生实例
+```
 
 `truffle init`改为`truffle unbox metacoin`可以产生几个文件: 
 >* contracts  存放智能合约
