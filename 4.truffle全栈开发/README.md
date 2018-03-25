@@ -37,3 +37,5 @@ truffle unbox metacoin  //产生实例
 >* 客户端  
 >* TestRPC  
 >	* 基于javascript的区块链“模拟器”  
+>	* 不需要等待“挖矿”，所有区块链操作瞬间完成  
+>	* 主要用于部署前测试
