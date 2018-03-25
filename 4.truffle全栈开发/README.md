@@ -50,4 +50,22 @@ truffle unbox metacoin  //产生实例
 部署成功
 >>>  trufflre console     //利用控制台交互
 
+truffle(development)>  web3.eth.accounts    //列出网络中所有的账户
+truffle(development)>  web3.currentProvider //列出当前连接网络的信息
+truffle(development)>  web3.personal.newAccount()    //创建一个新的账户
+
+由于MetaCoin已经部署，可通过此关键字进行交互
+truffle(development)>  MetaCoin.deployed().then(contract => { metacoin = contract })
+truffle(development)>  metacoin  //通过实例与合约交互
+```
+
+**可通过Web3调用合约方程**
+>* 方程名.call()     //只可用于只读方程
+>* 方程名.send()/方程名()  
+
+```
+查看账户余额
+truffle(development)>  metacoin.getBalance.call('0x418729f901149a6af3c6248e463b8632c1d29ebc').then((result) => {console.log(result)})  
+返回结果:`{ [String: '10000'] s: 1, e: 4, c: [ 10000 ] }`
+
 ```
