@@ -72,7 +72,17 @@ truffle(development)>  metacoin.getBalance.call('0x418729f901149a6af3c6248e463b8
 给第二个账户打钱
 truffle(development)>  metacoin.sendCoin('0xf0f9a288074e24c6081a9a7fa1c49b8d18e45567',2).then((result) => {console.log(result)})
 ```
-返回`true`说明转账成功  
+返回`账户信息`说明转账成功  
 **注**:调用的函数不可有call，否则会导致操作只会在本地的node上执行，不会同步到etherium网络  
+
+## （六）前端开发  
+>* truffle box:脚手架，包含后端contract和前端代码  
+>* Web3  
+```
+rm -rf *    //首先删除当前目录下的所有内容
+truffle unbox react  //下载react
+```
+
+
 
 
