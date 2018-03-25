@@ -80,7 +80,12 @@ truffle(development)>  metacoin.sendCoin('0xf0f9a288074e24c6081a9a7fa1c49b8d18e
 >* Web3  
 ```
 rm -rf *    //首先删除当前目录下的所有内容
-truffle unbox react  //下载react
+truffle unbox react  //下载react  
+truffle compile
+truffle migration
+注意修改util里的getWeb3.js中的端口与truffle.js中的端口保持一致
+npm run start
+浏览器显示
 ```
 
 
