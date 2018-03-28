@@ -19,5 +19,13 @@ module.exports = function(deployer) {
 ```  
 >* 部署合约：新开终端输入`ganache-cli`，切换回原终端输入`truffle migrate`  
 >* 控制台交互：`truffle console`
->* 
->* 
+```
+//实例化
+truffle(development)> Payroll.deployed().then(instance=>{payroll=instance})
+//获取账户
+truffle(development)> web3.eth.accounts
+//加入员工
+truffle(development)> payroll.addEmployee('0xf6197e34b320d808df539fa3ee2a32d5e1137e9a',2)
+//查看员工信息
+truffle(development)> payroll.employees.call('0xf6197e34b320d808df539fa3ee2a32d5e1137e9a').then(result=>console.log(result))
+```
